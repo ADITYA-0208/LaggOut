@@ -15,10 +15,28 @@ const PORT = process.env.PORT;
 
 const __dirname = path.resolve();
 
+// ✅ Dynamic CORS origin handling
+const allowedOrigins = [
+  "http://localhost:5173",
+  /\.vercel\.app$/ // allows wildcard subdomains like https://*.vercel.app
+];
+
 app.use(
   cors({
-    origin: "http://localhost:5173",
-    credentials: true, // allow frontend to send cookies
+    origin: function (origin, callback) {
+      if (!origin) return callback(null, true); // allow server-to-server or tools like Postman
+
+      const isAllowed = allowedOrigins.some((allowed) =>
+        allowed instanceof RegExp ? allowed.test(origin) : allowed === origin
+      );
+
+      if (isAllowed) {
+        return callback(null, true);
+      } else {
+        return callback(new Error("Not allowed by CORS"));
+      }
+    },
+    credentials: true,
   })
 );
 
@@ -29,6 +47,7 @@ app.use("/api/auth", authRoutes);
 app.use("/api/users", userRoutes);
 app.use("/api/chat", chatRoutes);
 
+// ✅ Serve frontend in production
 if (process.env.NODE_ENV === "production") {
   app.use(express.static(path.join(__dirname, "../frontend/dist")));
 
