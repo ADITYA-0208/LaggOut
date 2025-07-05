@@ -47,25 +47,20 @@ A full-stack real-time video calling and chat application built using **MERN sta
 
 ### 1. Clone the Repo
 
-```bash
 git clone https://github.com/ADITYA-0208/LaggOut.git
 cd LaggOut
 
 3. Run Locally
-🚀 Backend
-bash
-Copy
-Edit
-cd backend
-npm install
-npm run dev
-💻 Frontend
-bash
-Copy
-Edit
-cd frontend
-npm install
-npm run dev
+      🚀 Backend
+      
+            cd backend
+            npm install
+            npm run dev
+      💻 Frontend
+      
+            cd frontend
+            npm install
+            npm run dev
 
 ### 🧾 Login Page
 ![Login](assets/Log-in.png)
