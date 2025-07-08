@@ -87,6 +87,4 @@ cd LaggOut
 ![Login](assets/ChatAPP2.png)
 
 ### 🧾 Present Screen Page
-![Login](assets/Video Call :Present Screen.png)
-
-
+![Login](assets/Video%20Call%20%3APresent%20Screen.png)
