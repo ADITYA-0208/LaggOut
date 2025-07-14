@@ -105,10 +105,10 @@ Make sure your backend is CORS-configured to allow:
 ### 🧾 Login Page
 ![Login](assets/Login.png)
 
-### 📊 SignUP Page
-![SignUp](assets/Signup.png)
+### SignUP Page
+![SignUp](assets/Signin.png)
 
-### 🛍️ Overborading Page
+### Overborading Page
 ![Overborading](assets/Overboarding.png)
 
 ### Home Page
@@ -123,7 +123,7 @@ Make sure your backend is CORS-configured to allow:
 ### ChatAPP2
 ![ChatAPP2](assets/ChatAPP2.png)
 
-### 🧾 Video_Call_Present_Screen
+### Video_Call_Present_Screen
 ![Video_Call & Present_Screen.png](assets/Video_Call_Present_Screen.png)
 
 
