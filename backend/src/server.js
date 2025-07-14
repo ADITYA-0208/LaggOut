@@ -18,7 +18,8 @@ const __dirname = path.resolve();
 // ✅ Dynamic CORS origin handling
 const allowedOrigins = [
   "http://localhost:5173",
-  /\.vercel\.app$/ // allows wildcard subdomains like https://*.vercel.app
+  /\.vercel\.app$/,
+  /^https:\/\/.*\.vercel\.app$/ // allows wildcard subdomains like https://*.vercel.app
 ];
 
 app.use(

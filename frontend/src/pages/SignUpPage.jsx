@@ -55,7 +55,7 @@ const SignUpPage = () => {
           <div className="space-y-3">
             <div className="form-control">
               <label className="label">Full Name</label>
-              <input type="text" placeholder="John Doe"
+              <input type="text" placeholder="Aditya Khanna"
                 className="input w-full bg-[#282a36] text-white border border-[#6272a4]"
                 value={signupData.fullName}
                 onChange={(e) => setSignupData({ ...signupData, fullName: e.target.value })}
@@ -64,7 +64,7 @@ const SignUpPage = () => {
   
             <div className="form-control">
               <label className="label">Email</label>
-              <input type="email" placeholder="john@gmail.com"
+              <input type="email" placeholder="adi@gmail.com"
                 className="input w-full bg-[#282a36] text-white border border-[#6272a4]"
                 value={signupData.email}
                 onChange={(e) => setSignupData({ ...signupData, email: e.target.value })}
