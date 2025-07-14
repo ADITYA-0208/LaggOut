@@ -106,7 +106,7 @@ Make sure your backend is CORS-configured to allow:
 ![Login](assets/Login.png)
 
 ### SignUP Page
-![SignUp](assets/Signin.png)
+![SignUp](assets/Singin.png)
 
 ### Overborading Page
 ![Overborading](assets/Overboarding.png)
